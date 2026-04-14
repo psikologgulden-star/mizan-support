@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mizan — Gizlilik Politikası</title>
+  <style>
+    :root {
+      --green: #2A6B72;
+      --light: #E1F5EE;
+      --text: #1a1a1a;
+      --muted: #555;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: #f9f9f9;
+      line-height: 1.7;
+    }
+    header {
+      background: var(--green);
+      color: white;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .logo {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 16px;
+    }
+    header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+    header p { font-size: 15px; opacity: 0.8; }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+    .date {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    section { margin-bottom: 36px; }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--light);
+    }
+    p { margin-bottom: 12px; color: var(--text); font-size: 15px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; font-size: 15px; color: var(--text); }
+    .highlight {
+      background: var(--light);
+      border-left: 4px solid var(--green);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid #e0e0e0;
+    }
+
+    /* English section */
+    .lang-divider {
+      text-align: center;
+      margin: 48px 0 36px;
+      position: relative;
+    }
+    .lang-divider::before {
+      content: '';
+      display: block;
+      height: 1px;
+      background: #ddd;
+      position: absolute;
+      top: 50%;
+      left: 0; right: 0;
+    }
+    .lang-divider span {
+      background: #f9f9f9;
+      padding: 0 16px;
+      font-size: 13px;
+      color: var(--muted);
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">M</div>
+  <h1>Mizan</h1>
+  <p>Gizlilik Politikası / Privacy Policy</p>
+</header>
+
+<main>
+  <p class="date">Son güncelleme: Nisan 2026</p>
+
+  <!-- ═══ TÜRKÇE ═══ -->
+  <section>
+    <h2>1. Giriş</h2>
+    <p>Mizan uygulamasını kullandığınız için teşekkür ederiz. Bu Gizlilik Politikası, uygulamamızın hangi verileri topladığını, bu verileri nasıl kullandığını ve koruduğunu açıklar.</p>
+    <div class="highlight">
+      Mizan, kullanıcı verilerini üçüncü taraflara satmaz, kiralamaz veya reklam amaçlı kullanmaz.
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Topladığımız Veriler</h2>
+    <p><strong>Zorunlu veriler:</strong></p>
+    <ul>
+      <li><strong>Telefon numarası:</strong> SMS ile kimlik doğrulama amacıyla Google Firebase Authentication servisi aracılığıyla toplanır.</li>
+      <li><strong>Görünen ad:</strong> Uygulamaya girdiğiniz ad, diğer kullanıcıların sizi tanıyabilmesi için saklanır.</li>
+      <li><strong>İşlem verileri:</strong> Gönderdiğiniz ve aldığınız ödeme istekleri, tutarlar ve açıklamalar.</li>
+    </ul>
+    <p><strong>Cihazdan okunan (Firestore'a gönderilmeyen) veriler:</strong></p>
+    <ul>
+      <li><strong>Telefon rehberi:</strong> Mizan kullanıcılarını eşleştirmek için yalnızca uygulama belleğinde kullanılır. Rehber içeriği sunucularımıza gönderilmez.</li>
+      <li><strong>Bildirim izni:</strong> Anlık bildirimler için FCM token'ı Firebase'e iletilir.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Verileri Nasıl Kullanıyoruz</h2>
+    <ul>
+      <li>Hesabınızı oluşturmak ve kimliğinizi doğrulamak</li>
+      <li>İşlem geçmişinizi ve bakiyelerinizi göstermek</li>
+      <li>Ödeme istekleri için anlık bildirim göndermek</li>
+      <li>Grup harcamalarını hesaplamak</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Veri Güvenliği</h2>
+    <p>Tüm veriler Google Firebase altyapısı üzerinde saklanmaktadır. Firebase, endüstri standardı güvenlik önlemleri uygular. Uygulamamız, güvenlik kuralları sayesinde yalnızca kendi verilerinize erişmenizi sağlar.</p>
+    <p>Verileriniz şifrelenmiş HTTPS bağlantısı üzerinden iletilir.</p>
+  </section>
+
+  <section>
+    <h2>5. Üçüncü Taraf Hizmetler</h2>
+    <p>Mizan, aşağıdaki Google Firebase hizmetlerini kullanmaktadır:</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> — SMS kimlik doğrulama</li>
+      <li><strong>Cloud Firestore</strong> — veri saklama</li>
+      <li><strong>Firebase Cloud Messaging</strong> — anlık bildirimler</li>
+    </ul>
+    <p>Google'ın gizlilik politikasına <a href="https://policies.google.com/privacy" target="_blank">buradan</a> ulaşabilirsiniz.</p>
+  </section>
+
+  <section>
+    <h2>6. Verileriniz Üzerindeki Haklarınız</h2>
+    <ul>
+      <li><strong>Silme:</strong> Profil ekranından "Hesabı sil" seçeneği ile tüm verilerinizi kalıcı olarak silebilirsiniz.</li>
+      <li><strong>Çıkış:</strong> Herhangi bir zamanda uygulamadan çıkış yapabilirsiniz.</li>
+      <li><strong>Erişim:</strong> Verilerinize ilişkin sorularınız için aşağıdaki iletişim adresimize ulaşabilirsiniz.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Çocukların Gizliliği</h2>
+    <p>Mizan, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek veri toplamaz.</p>
+  </section>
+
+  <section>
+    <h2>8. Politika Değişiklikleri</h2>
+    <p>Bu politikayı güncelleyebiliriz. Önemli değişiklikler uygulama içi bildirimle duyurulur. Güncel politika her zaman bu sayfada yayınlanır.</p>
+  </section>
+
+  <section>
+    <h2>9. İletişim</h2>
+    <p>Gizlilik ile ilgili sorularınız için: <a href="mailto:destek@mizan.app">destek@mizan.app</a></p>
+  </section>
+
+  <!-- ═══ ENGLISH ═══ -->
+  <div class="lang-divider"><span>🇬🇧 English</span></div>
+
+  <section>
+    <h2>1. Introduction</h2>
+    <p>Thank you for using Mizan. This Privacy Policy explains what data our app collects, how we use it, and how we protect it.</p>
+    <div class="highlight">
+      Mizan does not sell, rent, or use your data for advertising purposes.
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Data We Collect</h2>
+    <p><strong>Required data:</strong></p>
+    <ul>
+      <li><strong>Phone number:</strong> Collected via Google Firebase Authentication for SMS verification.</li>
+      <li><strong>Display name:</strong> The name you enter, stored so other users can identify you.</li>
+      <li><strong>Transaction data:</strong> Payment requests you send and receive, amounts, and descriptions.</li>
+    </ul>
+    <p><strong>Device data (not sent to Firestore):</strong></p>
+    <ul>
+      <li><strong>Phone contacts:</strong> Used only in app memory to match Mizan users. Contact data is never uploaded to our servers.</li>
+      <li><strong>Notification permission:</strong> An FCM token is sent to Firebase to enable push notifications.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>Create your account and verify your identity</li>
+      <li>Display your transaction history and balances</li>
+      <li>Send push notifications for payment requests</li>
+      <li>Calculate group expense splits</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Data Security</h2>
+    <p>All data is stored on Google Firebase infrastructure, which applies industry-standard security measures. Our security rules ensure you can only access your own data. All data is transmitted over encrypted HTTPS connections.</p>
+  </section>
+
+  <section>
+    <h2>5. Third-Party Services</h2>
+    <p>Mizan uses the following Google Firebase services:</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> — SMS sign-in</li>
+      <li><strong>Cloud Firestore</strong> — data storage</li>
+      <li><strong>Firebase Cloud Messaging</strong> — push notifications</li>
+    </ul>
+    <p>View Google's privacy policy at <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</p>
+  </section>
+
+  <section>
+    <h2>6. Your Rights</h2>
+    <ul>
+      <li><strong>Deletion:</strong> Use "Delete Account" in the Profile screen to permanently delete all your data.</li>
+      <li><strong>Sign out:</strong> You can sign out at any time.</li>
+      <li><strong>Access:</strong> Contact us at the address below for any data-related questions.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Children's Privacy</h2>
+    <p>Mizan is not intended for children under 13 and does not knowingly collect data from this age group.</p>
+  </section>
+
+  <section>
+    <h2>8. Policy Changes</h2>
+    <p>We may update this policy. Significant changes will be communicated via in-app notification. The current policy is always available on this page.</p>
+  </section>
+
+  <section>
+    <h2>9. Contact</h2>
+    <p>For privacy-related questions: <a href="mailto:destek@mizan.app">destek@mizan.app</a></p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Mizan · <a href="mailto:destek@mizan.app">destek@mizan.app</a>
+</footer>
+
+</body>
+</html>
